@@ -1,13 +1,13 @@
 <script>
-  import { Toast } from "bootstrap";
-
   import { opc } from "../stores";
+  import { Toast } from "bootstrap";
 
   let toastEl, instancia;
 
   $: if (toastEl) {
     instancia = new Toast(toastEl);
   }
+  
   $: if ($opc.estado) {
     mostrarToast();
   }
