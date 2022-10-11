@@ -1,7 +1,7 @@
 <script>
-  import { opc } from "../stores";
   import { Toast } from "bootstrap";
-
+  import { opc } from "../stores";
+  
   let toastEl, instancia;
 
   $: if (toastEl) {
